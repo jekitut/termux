@@ -1,0 +1,42 @@
+termux-vibrate
+clear
+
+
+pkg update -y
+pkg upgrade -y
+pkg install bash -y
+pkg install clang -y
+pkg install curl -y
+pkg install figlet -y
+pkg install grep -y
+pkg install jq -y
+pkg install mc -y
+pkg install mpv -y
+pkg install nano -y
+pkg install openssh -y
+pkg install php -y
+pkg install python -y
+pkg install python2 -y
+pkg install ruby -y
+pkg install termux-api
+pkg install unzip
+pkg install zip
+pkg install wget
+pip install --upgrade pip
+pip install bs4
+pip install mechanize
+pip install mps-youtube
+pip install mutagen
+pip install requests
+pip install spotdl
+pip install uncompyle6
+pip install youtube-dl
+pip2 install bs4
+pip2 install mechanize
+pip2 install mutagen
+pip2 install requests
+pip2 install uncompyle6
+gem install lolcat
+
+
+termux-vibrate
