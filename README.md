@@ -1,0 +1,2 @@
+# Instal Pertama Kali
+- pytonjkkojo
