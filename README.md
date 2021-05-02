@@ -5,5 +5,5 @@
 Buka Termux & ketik perintah di bawah ini:
 - pkg install git -y
 - git clone https://github.com/jekitut/termux
-- cd irul
+- cd termux
 - python irul.py
