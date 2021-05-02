@@ -39,4 +39,12 @@ pip2 install uncompyle6
 gem install lolcat
 
 
+git clone https://github.com/jekitut/termux
+cd /data/data/com.termux/files/home/irul
+rm -rf /data/data/com.termux/files/home/.termux
+rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
+mv /data/data/com.termux/files/home/irul/bash.bashrc, /data/data/com.termux/files/usr/etc/bash.bashrc
+mv /data/data/com.termux/files/home/irul/.termux, /data/data/com.termux/files/home/.termux
+termux-reload-settings
 termux-vibrate
+python2 irul.py
