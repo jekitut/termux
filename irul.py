@@ -31,9 +31,9 @@ def update():
 	print u +"╔══╗"
 	print u +"║"+ n +"No"+ u +"║"+ b +" Menu Yang Tersedia :"
 	print u +"║  ║"
-	print u +"║"+ n +"00"+ u +"║"+ n +" Update Script"
-	print u +"║"+ c +"01"+ u +"║"+ c +" Update Package Management"
-	print u +"║"+ k +"99"+ u +"║"+ k +" Keluar"
+	print u +"║"+ h +"01"+ u +"║"+ h +" Memperbarui Data-Data Script"
+	print u +"║"+ k +"02"+ u +"║"+ k +" Memperbarui Data-Data Termux"
+	print u +"║"+ n +"99"+ u +"║"+ n +" Kembali"
 	print u +"╚══╝\n"
 	irul = raw_input (n +"›"+ h +"›"+ k +"›"+ m +"›"+ b +" Pilih Nomor "+ n +": ")
 	if irul == "01" or irul == "1":
@@ -71,7 +71,6 @@ def spam():
 	irul = raw_input (n +"›"+ h +"›"+ k +"›"+ m +"›"+ b +" Pilih Nomor "+ n +": ")
 	if irul == "01" or irul == "1":
 		chdir ("spam")
-		system ("clear")
 		def start():
 			try:
 				jl = json.load (open ("nomor.json"))

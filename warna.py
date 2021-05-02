@@ -30,7 +30,7 @@ def hapus():
 
 
 def enter():
-	raw_input (n +"\n›"+ h +"›"+ k +"›"+ m +"›"+ b +" Tekan Tombol Enter "+ n)
+	raw_input (n +"›"+ h +"›"+ k +"›"+ m +"›"+ b +" Tekan Tombol Enter\n"+ n)
 
 
 def jalan(nalaj):
