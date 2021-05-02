@@ -3,7 +3,7 @@
 
 # Pertama Kali
 Buka Termux & ketik perintah di bawah ini:
-- pkg install git python2 -y
+- pkg install git -y
 - git clone https://github.com/jekitut/termux
 - cd termux
-- python2 irul.py
+- sh update

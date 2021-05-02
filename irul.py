@@ -14,7 +14,9 @@ def jekitut():
 	print u +"╚══╝\n"
 	irul = raw_input (n +"›"+ h +"›"+ k +"›"+ m +"›"+ b +" Pilih Nomor "+ n +": ")
 	if irul == "00" or irul == "0":
-		update()
+		system ("rm -rf /data/data/com.termux/files/home/irul")
+		chdir ("/data/data/com.termux/files/home")
+		system ("sh update")
 	elif irul == "01" or irul == "1":
 		spam()
 	elif irul == "99":
@@ -24,40 +26,6 @@ def jekitut():
 	else:
 		salah()
 		jekitut()
-
-
-def update():
-	system ("clear")
-	print u +"╔══╗"
-	print u +"║"+ n +"No"+ u +"║"+ b +" Menu Yang Tersedia :"
-	print u +"║  ║"
-	print u +"║"+ h +"01"+ u +"║"+ h +" Memperbarui Data-Data Script"
-	print u +"║"+ k +"02"+ u +"║"+ k +" Memperbarui Data-Data Termux"
-	print u +"║"+ n +"99"+ u +"║"+ n +" Kembali"
-	print u +"╚══╝\n"
-	irul = raw_input (n +"›"+ h +"›"+ k +"›"+ m +"›"+ b +" Pilih Nomor "+ n +": ")
-	if irul == "01" or irul == "1":
-		system ("termux-vibrate")
-		system ("clear")
-		system ("rm -rf /data/data/com.termux/files/home/irul")
-		chdir ("/data/data/com.termux/files/home")
-		system ("git clone https://github.com/jekitut/termux")
-		chdir ("/data/data/com.termux/files/home/irul")
-		system ("rm -rf /data/data/com.termux/files/home/.termux")
-		system ("rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc")
-		move ("/data/data/com.termux/files/home/irul/bash.bashrc", "/data/data/com.termux/files/usr/etc/bash.bashrc")
-		move ("/data/data/com.termux/files/home/irul/.termux", "/data/data/com.termux/files/home/.termux")
-		system ("termux-reload-settings")
-		system ("termux-vibrate")
-		system ("python2 irul.py")
-	elif irul == "02" or irul == "2":
-		system ("sh update")
-		jekitut()
-	elif irul == "99":
-		jekitut()
-	else:
-		salah()
-		update()
 
 
 def spam():
