@@ -4,7 +4,6 @@ from warna import *
 
 def jekitut():
 	koneksi()
-	system ("clear")
 	print u +"╔══╗"
 	print u +"║"+ n +"No"+ u +"║"+ b +" Menu Yang Tersedia :"
 	print u +"║  ║"

@@ -41,11 +41,17 @@ def jalan(nalaj):
 
 
 def koneksi():
-	titik = ["    ", "•   ", "••  ", "••• "]
-	for i in titik:
-		print m + tebal +"\r!!! Aktifkan Koneksi Internet "+ n + i,
-		sys.stdout.flush ()
-		sleep (1)
+	try:
+		get ("https://raw.githubusercontent.com/jekitut/termux/master/README.md").text
+		print ""
+		system ("clear")
+	except ConnectionError:
+		titik = ["    ", "•   ", "••  ", "••• "]
+		for i in titik:
+			print m + tebal +"\r!!! Aktifkan Koneksi Internet "+ n + i,
+			sys.stdout.flush ()
+			sleep (1)
+		koneksi()
 
 
 def salah():
