@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import getpass, hashlib, json, # mechanize,
+import getpass, hashlib, json # mechanize,
 import random, re, smtplib, sys, threading, time
 # from mechanize import Browser, URLError
 from multiprocessing.pool import ThreadPool
