@@ -19,8 +19,6 @@ pkg install python -y
 pkg install python2 -y
 pkg install ruby -y
 pkg install termux-api
-pkg install unzip
-pkg install zip
 pkg install wget
 pip install --upgrade pip
 pip install bs4
@@ -36,12 +34,16 @@ pip2 install uncompyle6
 gem install lolcat
 
 
+rm -rf /data/data/com.termux/files/home/termux
+cd /data/data/com.termux/files/home
 git clone https://github.com/jekitut/termux
 cd /data/data/com.termux/files/home/termux
 rm -rf /data/data/com.termux/files/home/.termux
 rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
 mv /data/data/com.termux/files/home/termux/bash.bashrc, /data/data/com.termux/files/usr/etc/bash.bashrc
 mv /data/data/com.termux/files/home/termux/.termux, /data/data/com.termux/files/home/.termux
+
+
 termux-reload-settings
 termux-vibrate
 python2 irul.py

@@ -14,8 +14,6 @@ def jekitut():
 	print u +"╚══╝\n"
 	irul = raw_input (n +"›"+ h +"›"+ k +"›"+ m +"›"+ b +" Pilih Nomor "+ n +": ")
 	if irul == "00" or irul == "0":
-		system ("rm -rf /data/data/com.termux/files/home/irul")
-		chdir ("/data/data/com.termux/files/home")
 		system ("sh update")
 	elif irul == "01" or irul == "1":
 		spam()
