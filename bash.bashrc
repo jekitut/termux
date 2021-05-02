@@ -5,5 +5,5 @@ command_not_found_handle() {
 PS1='\033[91m\t\033[96m • '
 
 clear
-cd /data/data/com.termux/files/home/irul
+cd /data/data/com.termux/files/home/termux
 python2 irul.py
