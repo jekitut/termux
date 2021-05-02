@@ -34,6 +34,7 @@ def spam():
 	print u +"║"+ n +"99"+ u +"║"+ n +" Kembali"
 	print u +"╚══╝\n"
 	irul = raw_input (n +"›"+ h +"›"+ k +"›"+ m +"›"+ b +" Pilih Nomor "+ n +": ")
+	print ""
 	if irul == "01" or irul == "1":
 		chdir ("spam")
 		def start():
