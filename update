@@ -1,49 +1,54 @@
-termux-vibrate
-clear
+try:
+    cd /data/data/com.termux/files/home
+    
+    termux-vibrate
+    clear
 
 
-pkg update -y
-pkg upgrade -y
-pkg install bash -y
-pkg install clang -y
-pkg install curl -y
-pkg install figlet -y
-pkg install grep -y
-pkg install jq -y
-pkg install mc -y
-pkg install mpv -y
-pkg install nano -y
-pkg install openssh -y
-pkg install php -y
-pkg install python -y
-pkg install python2 -y
-pkg install ruby -y
-pkg install termux-api
-pkg install wget
-pip install --upgrade pip
-pip install bs4
-pip install mechanize
-pip install mutagen
-pip install requests
-pip install uncompyle6
-pip2 install bs4
-pip2 install mechanize
-pip2 install mutagen
-pip2 install requests
-pip2 install uncompyle6
-gem install lolcat
+    pkg update -y
+    pkg upgrade -y
+    pkg install bash -y
+    pkg install mc -y
+    pkg install nano -y
+    pkg install php -y
+    pkg install python -y
+    pkg install python2 -y
+    pkg install termux-api
+    pip install --upgrade pip
+    pip install bs4
+    pip install mechanize
+    pip install requests
+    pip install uncompyle6
+    pip2 install bs4
+    pip2 install mechanize
+    pip2 install requests
+    pip2 install uncompyle6
 
 
-rm -rf /data/data/com.termux/files/home/termux
-cd /data/data/com.termux/files/home
-git clone https://github.com/jekitut/termux
-cd /data/data/com.termux/files/home/termux
-rm -rf /data/data/com.termux/files/home/.termux
-rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
-mv /data/data/com.termux/files/home/termux/bash.bashrc /data/data/com.termux/files/usr/etc/bash.bashrc
-mv /data/data/com.termux/files/home/termux/.termux /data/data/com.termux/files/home/.termux
+    rm -rf /data/data/com.termux/files/home/termux
+    git clone https://github.com/jekitut/termux
+    cd /data/data/com.termux/files/home/termux
+    rm -rf /data/data/com.termux/files/home/.termux
+    rm -rf /data/data/com.termux/files/usr/etc/bash.bashrc
+    mv /data/data/com.termux/files/home/termux/bash.bashrc /data/data/com.termux/files/usr/etc/bash.bashrc
+    mv /data/data/com.termux/files/home/termux/.termux /data/data/com.termux/files/home/.termux
 
 
-termux-reload-settings
-termux-vibrate
-python2 irul.py
+    termux-reload-settings
+    termux-vibrate
+    python2 irul.py
+
+
+catch || {
+    python -m pip install --upgrade pip
+    pip install bash
+    pip install php
+    pip install python2
+    pip install bs4
+    pip install mechanize
+    pip install requests
+    pip install uncompyle6
+
+
+    python2 irul.py
+}
