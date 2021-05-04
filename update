@@ -1,4 +1,4 @@
-try:
+try {
     cd /data/data/com.termux/files/home
     
     termux-vibrate
@@ -39,7 +39,7 @@ try:
     python2 irul.py
 
 
-catch || {
+} catch || {
     python -m pip install --upgrade pip
     pip install bash
     pip install php
