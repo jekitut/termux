@@ -1,4 +1,4 @@
-if ((cat /data/data/com.termux/files/home/termux))
+if [[ -d /data/data/com.termux/files/home/termux ]]
 then
     termux-vibrate
     clear
@@ -37,14 +37,14 @@ then
     termux-reload-settings
     termux-vibrate
 else
-    python -m pip install --upgrade pip
-    pip install bash
-    pip install php
-    pip install python2
-    pip install bs4
-    pip install mechanize
-    pip install requests
-    pip install uncompyle6
+    //python -m pip install --upgrade pip
+    //pip install bash
+    //pip install php
+    //pip install python2
+    //pip install bs4
+    //pip install mechanize
+    //pip install requests
+    //pip install uncompyle6
 fi
 
 
