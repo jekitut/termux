@@ -1,4 +1,4 @@
-if [[-d /data/data/com.termux/files/home]]
+if [(cat /data/data/com.termux/files/home/termux)]
 then
     termux-vibrate
     clear
