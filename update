@@ -1,6 +1,6 @@
+clear
 if [ -d /data/data/com.termux/files/home/termux ]; then
     termux-vibrate
-    clear
 
 
     pkg update -y
@@ -36,15 +36,14 @@ if [ -d /data/data/com.termux/files/home/termux ]; then
     termux-reload-settings
     termux-vibrate
 else
-    echo "Windows"
-    #python -m pip install --upgrade pip
-    #pip install bash
-    #pip install php
-    #pip install python2
-    #pip install bs4
-    #pip install mechanize
-    #pip install requests
-    #pip install uncompyle6
+    python -m pip install --upgrade pip
+    pip install bash
+    pip install php
+    pip install python2
+    pip install bs4
+    pip install mechanize
+    pip install requests
+    pip install uncompyle6
 fi
 
 
