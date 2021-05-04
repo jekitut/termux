@@ -1,4 +1,4 @@
-if [cd /data/data/com.termux/files/home]
+if [[-d /data/data/com.termux/files/home]]
 then
     termux-vibrate
     clear
@@ -25,6 +25,7 @@ then
 
 
     rm -rf /data/data/com.termux/files/home/termux
+    cd /data/data/com.termux/files/home
     git clone https://github.com/jekitut/termux
     cd /data/data/com.termux/files/home/termux
     rm -rf /data/data/com.termux/files/home/.termux
@@ -35,9 +36,6 @@ then
 
     termux-reload-settings
     termux-vibrate
-    python2 irul.py
-
-
 else
     python -m pip install --upgrade pip
     pip install bash
@@ -47,7 +45,7 @@ else
     pip install mechanize
     pip install requests
     pip install uncompyle6
-
-
-    python2 irul.py
 fi
+
+
+python2 irul.py
